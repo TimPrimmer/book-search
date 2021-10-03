@@ -1,18 +1,27 @@
 import gql from 'graphql-tag';
 
-export const QUERY_THOUGHTS = gql`
-  query me($username: String) {
-    thoughts(username: $username) {
-      _id
-      thoughtText
-      createdAt
+
+export const GET_ME = gql`
+    query { 
+    me 
+    { 
+      email
       username
-      reactionCount
-      reactions {
-        _id
-        createdAt
-        username
-        reactionBody
+      savedBooks {
+        title
+      }
+    }
+  }
+`;
+
+export const ALL_USERS = gql`
+    query { 
+    allUsers 
+    { 
+      email
+      username
+      savedBooks {
+        title
       }
     }
   }
