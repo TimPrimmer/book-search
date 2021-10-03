@@ -10,7 +10,11 @@ A book searching and saving website using a custom GraphQL api!
 * MongoDB
 * Express
 * Node
+<<<<<<< HEAD
 
+=======
+* 
+>>>>>>> 0459783fac87a15e3bcacf9bdcbd73055a0b89de
 ## Table of Contents 
 
 * [Usage](#usage)
